@@ -77,7 +77,6 @@ def main():
                         placeholder="Your command will appear here"
                     )
 
-                    # כפתור Copy עם JS עובד
                     gr.HTML("""
                     <button id="copy-btn" style="
                         margin-top: 10px;
@@ -122,7 +121,9 @@ def main():
             show_progress="minimal"
         )
 
-    demo.launch()
+    # Launch demo with Render settings
+    port = int(os.environ.get("PORT", 8080))
+    demo.launch(server_name="0.0.0.0", server_port=port)
 
 
 if __name__ == "__main__":
