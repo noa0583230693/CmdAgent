@@ -1,0 +1,80 @@
+body {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    font-family: 'Inter', sans-serif;
+}
+
+/* Center container */
+.gradio-container {
+    max-width: 1100px !important;
+    margin: auto;
+    padding-top: 30px;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    padding: 20px;
+}
+
+.title-gradient {
+    background: linear-gradient(90deg, #60a5fa, #a78bfa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+    font-size: 40px;
+}
+
+.subtitle {
+    color: #cbd5e1;
+    font-size: 16px;
+}
+
+/* Glass effect container */
+.glass-box {
+    background: rgba(255,255,255,0.05);
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+    border: 1px solid rgba(255,255,255,0.08);
+    transition: all 0.3s ease;
+}
+
+.glass-box:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 50px rgba(0,0,0,0.6);
+}
+
+/* Button styling override */
+button {
+    font-weight: 600 !important;
+    border-radius: 12px !important;
+}
+
+/* Code block */
+pre {
+    border-radius: 12px !important;
+}
+#copy-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #6366f1, #818cf8);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#copy-btn:hover {
+    background: linear-gradient(135deg, #4f46e5, #6366f1);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+#copy-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
